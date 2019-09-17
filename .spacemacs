@@ -343,6 +343,10 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   )
+(setq mac-option-modifier nil
+         mac-command-modifier 'meta
+         x-select-enable-clipboard t)
+
 (add-to-list 'auto-mode-alist '("\\.js\\'" . react-mode))
 ;; Remove missing semi lint error 
 (setq js2-strict-missing-semi-warning nil)
